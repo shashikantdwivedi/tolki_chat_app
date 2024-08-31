@@ -41,21 +41,17 @@ class _MyApp extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           textTheme: TextTheme(
-            headlineLarge: GoogleFonts.roboto(
-                fontSize: 48, color: Colors.black, fontWeight: FontWeight.bold),
-            headlineMedium: GoogleFonts.roboto(
-                fontSize: 32,
-                color: const Color(0xFF2A2A2A),
+            headlineLarge: GoogleFonts.dmSans(
+                fontSize: 24, color: XColors.text, fontWeight: FontWeight.w600),
+            headlineMedium: GoogleFonts.dmSans(
+                fontSize: 20,
+                color: XColors.text,
                 fontWeight: FontWeight.bold),
-            headlineSmall: GoogleFonts.roboto(
-                fontSize: 24,
-                color: const Color(0xFF2A2A2A),
-                fontWeight: FontWeight.bold),
-            bodyLarge: GoogleFonts.roboto(fontSize: 18, color: Colors.black),
-            bodyMedium: GoogleFonts.roboto(fontSize: 16, color: Colors.black),
-            bodySmall: GoogleFonts.roboto(fontSize: 14, color: Colors.black),
+            bodyLarge: GoogleFonts.dmSans(fontSize: 16, color: XColors.text),
+            bodyMedium: GoogleFonts.dmSans(fontSize: 14, color: XColors.text),
+            bodySmall: GoogleFonts.dmSans(fontSize: 12, color: XColors.text),
           )),
-      initialRoute: Routes.splash,
+      initialRoute: Routes.login,
       onGenerateRoute: Routing.allRoutes,
       navigatorObservers: [FlutterSmartDialog.observer],
       builder: FlutterSmartDialog.init(),

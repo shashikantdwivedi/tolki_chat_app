@@ -18,6 +18,8 @@ dependencies:
   cached_network_image: ^3.4.1
   flutter_smart_dialog: ^4.9.7+9
   connectivity_plus: ^6.0.5
+  flutter_svg: ^2.0.10+1
+  intl_phone_field: ^3.2.0
 
 dev_dependencies:
   flutter_test:
@@ -27,3 +29,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
