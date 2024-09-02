@@ -51,7 +51,7 @@ class _MyApp extends State<MyApp> {
             bodyMedium: GoogleFonts.dmSans(fontSize: 14, color: XColors.text),
             bodySmall: GoogleFonts.dmSans(fontSize: 12, color: XColors.text),
           )),
-      initialRoute: Routes.verifyOtp,
+      initialRoute: Routes.profileSetup,
       onGenerateRoute: Routing.allRoutes,
       navigatorObservers: [FlutterSmartDialog.observer],
       builder: FlutterSmartDialog.init(),

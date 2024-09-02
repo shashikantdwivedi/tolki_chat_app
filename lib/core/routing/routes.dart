@@ -7,4 +7,7 @@ abstract class Routes {
   // Authentication
   static const login = "/login";
   static const verifyOtp = "/verify-otp";
+
+  // Profile
+  static const profileSetup = "/profile-setup";
 }
