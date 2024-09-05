@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tolki_chat_app/modules/authentication/ui/login_screen.dart';
 import 'package:tolki_chat_app/modules/authentication/ui/verify_otp_screen.dart';
+import 'package:tolki_chat_app/modules/profile/ui/profile_screen.dart';
 import 'package:tolki_chat_app/modules/profile/ui/profile_setup_screen.dart';
 import 'package:tolki_chat_app/modules/welcome/ui/welcome_screen.dart';
 import '../../components/online.dart';
@@ -32,6 +33,10 @@ class Routing {
       case Routes.profileSetup:
         return MaterialPageRoute(
             builder: (_) => const XOnline(child: ProfileSetupScreen()),
+            settings: settings);
+      case Routes.profile:
+        return MaterialPageRoute(
+            builder: (_) => const XOnline(child: ProfileScreen()),
             settings: settings);
       default:
         return MaterialPageRoute(

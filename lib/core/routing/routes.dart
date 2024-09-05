@@ -10,4 +10,5 @@ abstract class Routes {
 
   // Profile
   static const profileSetup = "/profile-setup";
+  static const profile = "/profile";
 }
