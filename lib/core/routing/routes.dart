@@ -11,4 +11,7 @@ abstract class Routes {
   // Profile
   static const profileSetup = "/profile-setup";
   static const profile = "/profile";
+
+  // Account settings
+  static const accountSettings = "/account-settings";
 }
